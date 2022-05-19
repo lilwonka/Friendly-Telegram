@@ -38,7 +38,7 @@ if (
     if input("> ").lower() != "force_insecure":
         sys.exit(1)
 
-if sys.version_info < (3, 8, 0):
+if sys.version_info < (3, 7, 0):
     print("Error: you must use at least Python version 3.8.0")  # pragma: no cover
 elif __package__ != "friendly-telegram":  # In case they did python __main__.py
     print(
